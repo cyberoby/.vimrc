@@ -1,0 +1,15 @@
+{
+  "python.analysis.typeCheckingMode": "off",
+  "diagnostic.enable": false,
+  "hover.enable": false,
+  "signature.enable": true,
+  "codeLens.enable": false,
+
+  "python.analysis.autoImportCompletions": false,
+  "inlayHint.enable": false,
+
+  "suggest.enablePreselect": false,
+  "suggest.noselect": true,
+  "suggest.triggerAfterInsertEnter": false,
+  "suggest.minTriggerInputLength": 3
+}
