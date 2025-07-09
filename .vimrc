@@ -2,9 +2,10 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-set termguicolors " Enable true color and syntax
 syntax on
 set background=dark
+set conceallevel=0
+let g:python_highlight_all = 1
 
 set ignorecase
 set smartcase
@@ -19,6 +20,9 @@ highlight Folded guibg=NONE guifg=#cccccc ctermbg=NONE ctermfg=LightGrey
 
 set fillchars=fold:\
 set foldtext=MinimalFoldText()
+
+nnoremap dw diw
+nnoremap cw ciw
 
 function! MinimalFoldText()
     let indent = indent(v:foldstart)
@@ -61,6 +65,8 @@ nnoremap N Nzz
 " Center screen after jumping to a line number
 cnoremap <expr> <CR> getcmdtype() == ':' && getcmdline() =~ '^\d\+$' ? "\<CR>zz" : "\<CR>"
 
+nnoremap fi find
+
 " PLUGINS
 filetype plugin on
 
@@ -78,6 +84,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " NERD Tree (File tree, netrw is builtin but has issues with coc"
 Plug 'preservim/nerdtree'
+
+" Better Python syntax
+Plug 'vim-python/python-syntax'
 
 call plug#end()
 
