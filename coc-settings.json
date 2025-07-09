@@ -1,7 +1,8 @@
 {
-  "python.analysis.typeCheckingMode": "off",
+  "coc.preferences.semanticTokensHighlight": true,
+  "python.analysis.typeCheckingMode": "basic",
   "diagnostic.enable": false,
-  "hover.enable": false,
+  "hover.enable": true,
   "signature.enable": true,
   "codeLens.enable": false,
 
